@@ -12,7 +12,7 @@
 - [ x] Build simple homepage + test backend connection
 
 ##  Day 2 – User Entity + Repository + Controller
-- [ ] Create `User` class (id, name, email, password)
+- [ x]Create `User` class (id, name, email, password)
 - [ ] Create JPA `UserRepository`
 - [ ] Create `UserController` with test route
 - [ ] Connect to database and test with one User
