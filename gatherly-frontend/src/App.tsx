@@ -1,26 +1,11 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {createRoot} from 'react-dom/client';
+import {createElement} from 'react';
+import { resolveConfig } from 'vite';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const root=createRoot(document.getElementById('root')!);
 
-export default App;
+const reactElement= createElement("h1", null , "hello this is test");
+
+console.log(reactElement);
+
+root.render( reactElement)
